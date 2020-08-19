@@ -1,0 +1,23 @@
+{
+    "name": "todo",
+    "version": "1.0.0",
+    "description": "A simple todo app built using the MERN stack following DigitalOcean's tutorial",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "start-watch": "nodemon index.js",
+        "dev": "concurrently \"yarn run start-watch\" \"cd client && yarn start\""
+    },
+    "author": "Nate Wolfe",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "dotenv": "^6.1.0",
+        "express": "^4.16.4",
+        "mongoose": "^5.3.6"
+    },
+    "devDependencies": {
+        "concurrently": "^4.0.1",
+        "nodemon": "^1.18.4"
+    }
+}
